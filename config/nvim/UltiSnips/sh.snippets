@@ -1,0 +1,10 @@
+
+snippet _dir
+# Script's directory
+_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+endsnippet
+
+snippet _dest
+# Destination install location
+_dest="$(readlink -m $_dir/..)"
+endsnippet
