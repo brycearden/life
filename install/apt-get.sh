@@ -13,6 +13,8 @@ echo "installing ag"
 sudo apt-get install silversearcher-ag
 echo "installing xclip"
 sudo apt-get install xclip
+echo "installing 7zip extracting tool"
+sudo apt-get install p7zip-full
 
 echo "all cli tools have been installed!"
 
