@@ -15,6 +15,8 @@ echo "installing xclip"
 sudo apt-get install xclip
 echo "installing 7zip extracting tool"
 sudo apt-get install p7zip-full
+echo "installing curl commandline tool"
+sudo apt-get install curl
 
 echo "all cli tools have been installed!"
 

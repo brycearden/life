@@ -263,7 +263,6 @@ set linebreak		" only wrap at a character in breakat
 set number
 set relativenumber
 set nolist			" list diables linebreak
-set textwidth=0		" Don't insert linebreaks for wrap
 set wrapmargin=0	" Don't insert linebreaks for wrap
 set mouse=a			" Can use mouse for most actions
 set pastetoggle=<F2> " Allow toggling paste mode with F2
@@ -278,6 +277,8 @@ set showmatch		" highlight matching [{()}]
 set backspace=2 	" can backspace through anything
 set autoread		" automatically updates file that has been changed outside of buffer
 set scrolloff=2		" Always shows at least 2 lines of context when scrolling
+set textwidth=0    " wrap to 80 chars on formatting call
+" set formatoptions-=ta " format the code as you are writing it
 
 " Disable backup and swap files
 set nobackup
