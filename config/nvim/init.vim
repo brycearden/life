@@ -29,11 +29,11 @@ Plug 'majutsushi/tagbar'
 Plug 'vimwiki/vimwiki'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-
 " Better starting screen
 Plug 'mhinz/vim-startify'
-
 Plug 'sickill/vim-pasta' " context-aware pasting
+" Plug 'mmai/vim-markdown-wiki'
+Plug 'tpope/vim-markdown'
 
 " " Session manager
 " Plug 'xolox/vim-session'
@@ -100,6 +100,12 @@ call plug#end()
 		let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 		let g:UltiSnipsSnippetDirectories = ["UltiSnips", "~/.dotfiles/config/nvim/UltiSnips"]
 "	}}}
+"	Vim Markdown {{{
+        " inline syntax highlighting in markdown
+        let g:markdown_fenced_languages = ['css', 'javascript', 'js=javascript', 'json=javascript', 'stylus', 'html', 'bash=sh', 'java', 'ruby', 'python', 'c']
+        " set text width to 80 chars for markdown files
+        " au BufRead, BufNewFile *.md setlocal textwidth=80
+"	}}}
 "   Airline (better status bar) {{{
 		let g:airline#extensions#tabline#enabled = 2
 		let g:airline#extensions#tabline#fnamemod = ':t'
@@ -144,19 +150,17 @@ call plug#end()
 "	}}}
 " {{{ vimwiki
 
-		let g:vimwiki_list = [{'path': '~/git/brycearden.github.io/_posts',
+		let g:vimwiki_list = [{'path': '~/code/Website/_posts',
 					\ 'syntax' : 'markdown','ext' : '.md' }]
 					" \ 'path_html': '~/Documents/vimwiki_html/'}]
 
 		let g:vimwiki_table_mappings = 0
-		" let g:vimwiki_global_ext=0
-		" let g:vimwiki_ext2syntax={}
-		" vim thinks all markdown files are .mkd
-		autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+		let g:vimwiki_global_ext=0
+		let g:vimwiki_ext2syntax={}
 		augroup filetypedetect
 			au! BufRead,BufNewFile */vimwiki/*        set filetype=vimwiki
 		augroup END
-" }}}
+" }}}"
 " Multiple Cursors {{{
 	" Default mapping
 	" let g:multi_cursor_next_key='<leader>n'
@@ -340,8 +344,7 @@ if has('autocmd') && !exists('autocommands_loaded')
     " are multiple windows open
     autocmd FileType qf wincmd J
 
-    autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-    let g:markdown_fenced_languages = ['css', 'javascript', 'js=javascript', 'json=javascript', 'stylus', 'html']
+
 
     " autocmd! BufEnter * call ApplyLocalSettings(expand('<afile>:p:h'))
 
