@@ -2,7 +2,7 @@
 
 echo "installing neovim..."
 
-if [ "$(uname)" == "Darwin" ]; then
+if [ "$(uname)" = "Darwin" ]; then
     echo "Running OSX.. enabling python support for nvim"
     pip2 install --user neovim
     pip3 install --user neovim
