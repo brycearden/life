@@ -499,7 +499,7 @@ nmap T :TagbarToggle<CR>
 " nnoremap <leader>| :vsp
 
 " map esc to jk
-inoremap jk <esc>
+inoremap <C-[> <esc>
 " move vertically by visual line not real line
 nnoremap j gj
 nnoremap k gk
