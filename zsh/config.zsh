@@ -30,5 +30,7 @@ bindkey '^[[3~' delete-char
 bindkey '^[^N' newtab
 bindkey '^?' backward-delete-char
 
+
+export KEYTIMEOUT=1
 fpath=($ZSH/functions $fpath)
 autoload -U $ZSH/functions/*(:t)
