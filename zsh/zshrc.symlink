@@ -19,6 +19,8 @@ if [[ -a ~/.localrc ]]; then
     source ~/.localrc
 fi
 
+# z terminal navigator
+source $ZSH/z/z.sh
 
 # initialize autocomplete
 autoload -U compinit
