@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 " Plugin 'gmarik/vundle'
 
 Plug 'chriskempson/base16-vim'
-Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Valloric/YouCompleteMe' " useful for vim autocomplete
 Plug 'ryanoasis/vim-devicons'
 " Plug 'Shougo/deoplete.nvim'
