@@ -96,6 +96,7 @@ call plug#end()
 		let g:UltiSnipsJumpForwardTrigger = "<tab>"
 		let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 		let g:UltiSnipsSnippetDirectories = ["UltiSnips", "~/.dotfiles/config/nvim/UltiSnips"]
+        let g:ultisnips_python_style = "google"
 "	}}}
 "	Vim Markdown {{{
         " inline syntax highlighting in markdown
