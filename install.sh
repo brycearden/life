@@ -31,8 +31,8 @@ if [ "$(uname)" = "Darwin" ]; then
     # ln -s ~/.dotfiles/nginx/code.dev /usr/local/etc/nginx/sites-enabled/code.dev
 fi
 
-echo "installing neovim"
-source install/nvim.sh
+# echo "installing neovim"
+# source install/nvim.sh
 
 echo "creating all of the symlinks"
 source install/link.sh
