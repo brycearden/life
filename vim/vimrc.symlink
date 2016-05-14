@@ -4,7 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 " let vundle manage vundle
-" Plugin 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
@@ -21,6 +21,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'rking/ag.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
