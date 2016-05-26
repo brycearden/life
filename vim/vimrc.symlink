@@ -33,7 +33,7 @@ Plugin 'honza/vim-snippets'
 " Better starting screen
 Plugin 'mhinz/vim-startify'
 Plugin 'sickill/vim-pasta' " context-aware pasting
-Plugin 'tpope/vim-markdown'
+" Plugin 'tpope/vim-markdown'
 
 " " Session manager
 " Plug 'xolox/vim-session'
@@ -530,10 +530,6 @@ nnoremap gV `[v`]
 
 " maps space to open and close folds
 nnoremap <space> za
-
-" Allow using ctl + arrow up or down to move between folds
-nmap <silent>fj zj
-nmap <silent>fk zk
 
 " easier moving of code blocks
 vnoremap < <gv
