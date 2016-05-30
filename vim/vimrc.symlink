@@ -34,6 +34,7 @@ Plugin 'honza/vim-snippets'
 " Better starting screen
 Plugin 'mhinz/vim-startify'
 Plugin 'sickill/vim-pasta' " context-aware pasting
+Plugin 'gorodinskiy/vim-coloresque'
 " Plugin 'tpope/vim-markdown'
 
 " " Session manager
