@@ -602,9 +602,6 @@ nnoremap <leader>a :Ag
 " shortcut to open NERDTree
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
-" Quick save command
-nnoremap <leader>w :call DeleteTrailingWS()<CR>:write<CR>
-
 " Quick quit command
 nnoremap <leader>q :quit<CR>
 
