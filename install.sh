@@ -8,6 +8,7 @@ git submodule update --init --recursive
 if [ "$(uname)" = "Linux" ]; then
     echo "Installing all linux cli tools"
     source install/apt-get.sh
+    source install/tmux.sh
     source install/ruby.sh
 fi
 
