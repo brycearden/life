@@ -17,6 +17,7 @@ echo "installing 7zip extracting tool"
 sudo apt-get install p7zip-full
 echo "installing curl commandline tool"
 sudo apt-get install curl
+sudo apt-get install python-dev python3-dev
 
 echo "all cli tools have been installed!"
 
