@@ -18,6 +18,7 @@ sudo apt-get install p7zip-full
 echo "installing curl commandline tool"
 sudo apt-get install curl
 sudo apt-get install python-dev python3-dev
+sudo apt-get install cmake build-essential
 
 echo "all cli tools have been installed!"
 
